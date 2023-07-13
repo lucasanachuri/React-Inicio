@@ -5,9 +5,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Contador from "./components/Contador";
 
 function App() {
+  const estado = true;
   return (
     <Container>
-      <Titulos></Titulos>
+      {/* <Titulos /> */}
+      <Titulos
+        subtitulo="Este subtitulo fue creado con props"
+        estadoNuevo={estado}
+      ></Titulos>
       <Contador></Contador>
     </Container>
   );
